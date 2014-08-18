@@ -1,0 +1,6 @@
+# Ignore svn
+.svn
+
+# No backups
+*~
+
