@@ -1,0 +1,59 @@
+<HTML>
+  <HEAD>
+    <TITLE>Python Packages in Github</TITLE>
+  </HEAD>
+  <BODY>
+    <CENTER>
+      <H1>Python Packages in Github</H1>
+      Tom Kuiper<BR/>2014 Aug 18
+    </CENTER>
+    <H2 ALIGN=center>Repo Management</H2>
+
+    <H3 ALIGN=center>Python Classes and Modules</H3>
+    <P>
+        A natural way to organize Python modules is to put the most general
+        classes in modules at or near the top of a directory tree and the
+        subclasses lower down, depending on what superclasses they inherit from.
+    </P>
+    <P>
+        In an application one generally needs a few subclasses and then the
+        classes from which they inherit attributes.  The modules required for the
+        <TT>import</TT> statements trace a lines from the tips of a few branches
+        to the trunk of the package directory tree.
+    </P>
+    <P>
+        In a special purpose controller, a problem arises in trying to copy only
+        the code needed for a single application.  If the entire tree is in one
+        Github repository, a <TT>clone</TT> would bring in lots of code that is
+        not needed.  This is inefficient and complicates code management.
+        We need a scheme in which the imports of all the classes minimizes the
+        implicit imports of unnecessary classes.
+    </P>
+    <P>
+      Git does not support partial <TT>clone</TT>.  This results in a large
+      number of repositories, basically one for each functional group of code,
+      which may still include several modules.  One can see this, for example,
+      at the <A HREF="https://github.com/ska-sa">SKA Github</A>.  From looking
+      at this collection, it isn't easy to see what needs to be cloned for a
+      given purpose without examining code and inspecting repos.
+    </P>
+
+    <H3 ALIGN=center>Managing Python under Github</H3>
+    <P>One can make it easier to identify the repos needed by having a naming
+      scheme that implies a hierarchy. To preserve uniformity among the DSN
+      radio astronomy hosts we need to agree on a file system hierarchy and
+      naming convention.  In general, the Git repository name will not be the
+      same as the local working directory. At best it will be the base name
+      of a hyphen-separated string.  This leads to some rules, namely
+      <OL>
+        <LI> If we are going to have a directory naming convention then the
+          directory name and position in the filesystem should be in
+          <TT>README.md</TT> of the repo.</LI>
+        <LI>Sub-directories in the working directory of a repository may only
+          contain code that is <UL>always</UL> required by the parent
+          directory. If the same effect can be achieved with files in the
+          working directory, that is preferred.</LI>
+      </OL>
+    </P>
+  </BODY>
+</HTML>
