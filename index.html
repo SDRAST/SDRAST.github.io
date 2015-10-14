@@ -37,7 +37,19 @@
 
     As discussed further in <A HREF="PackageGroups.html">Python Packages in
     Github</A>, we use a naming scheme that reflects the directory structure
-    of the Python packages.  The trunk of the directory tree is contained in
+    of the Python packages.  All the packages that are under Git management
+    live in
+      <DL>
+        <DT>{\tt /usr/local/lib/pythonX.Y/DSN-sci-packages</DT>
+        <DD>for Python packages.  To make this work, there needs to be a file
+          called {\tt DSN-Sci-packages.pth} which contains the string used
+            as the title of this list item.</DD>
+        <DT>{\tt /var/www/software/Python/DSN-Sci-packages/}</DT>
+        <DD>for Git HTML pages associated with the packages.  These
+            pages live in the {\tt gh-pages} branch of each package.</DD>
+      </DL>
+          
+    The trunk of the directory tree is contained in
     repos with a single name, such as <TT>MonitorControl</TT> and
     <TT>Electronics</TT>.
 
