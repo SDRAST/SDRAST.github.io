@@ -32,6 +32,10 @@ for astrophysics, physics, and radio astronomy engineering.
    astronomy
    datestimes
 
+Interdependencies
+=================
+.. image:: import-map-3.png
+
 Indices and tables
 ==================
 
