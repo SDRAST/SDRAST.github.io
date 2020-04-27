@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Radio Astronomy Software Tools'
-copyright = u'2019, Tom Kuiper'
+project = u'Single Dish Radio Astronomy Software Tools'
+copyright = u'2020, Tom Kuiper'
 author = u'Tom Kuiper'
 
 # The short X.Y version
