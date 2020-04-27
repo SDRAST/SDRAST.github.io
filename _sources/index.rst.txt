@@ -3,7 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 .. image:: DSNRAlogo.gif
+    :align: left
 
+Single Dish
+===========
 Radio Astronomy Software Tools
 ==============================
 
@@ -44,5 +47,5 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Revised by Tom Kuiper, 2019 November 15
+Revised by Tom Kuiper, 2020 April 27
 
