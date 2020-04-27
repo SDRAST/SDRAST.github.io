@@ -2,6 +2,7 @@
    sphinx-quickstart on Wed Oct 30 14:49:29 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+   
 .. image:: DSNRAlogo.gif
     :align: left
 
@@ -9,6 +10,10 @@ Single Dish
 ===========
 Radio Astronomy Software Tools
 ==============================
+
+NOTICE: **These web pages are in the process of being built**, while simultaneously
+converting from Python 2 to Python 3.  It will take a while.  Meanwhile, the
+pages are open to public access as a sign of things to come. 2020-04-27.
 
 Radio Astronomy Software Tools is a collection of software
 packages that have proven useful in doing radio astronomy with NASA's
