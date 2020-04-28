@@ -1,1 +1,0 @@
-.. include:: ../../Astronomy/README.rst
