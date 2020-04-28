@@ -39,8 +39,7 @@ for astrophysics, physics, and radio astronomy engineering.
 
    astronomy
    datestimes
-   radioastronomy
-
+   
 Interdependencies
 =================
 .. image:: import-map-3.png
