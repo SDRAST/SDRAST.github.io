@@ -37,8 +37,8 @@ for astrophysics, physics, and radio astronomy engineering.
    :maxdepth: 1
    :caption: Contents:
 
-   astronomy
-   datestimes
+   aboutastronomy
+   aboutdatestimes
    
 Interdependencies
 =================

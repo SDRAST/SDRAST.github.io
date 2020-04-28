@@ -1,11 +1,10 @@
 
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Index &#8212; Single Dish Radio Astronomy Software Tools 0.9 documentation</title>
+    <title>DatesTimes &#8212; Single Dish Radio Astronomy Software Tools 0.9 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -13,8 +12,9 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Astronomy" href="aboutastronomy.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -31,11 +31,31 @@
 
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="datestimes">
+<h1>DatesTimes<a class="headerlink" href="#datestimes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="conversions-between-various-date-and-time-formats">
+<h2>Conversions between various date and time formats<a class="headerlink" href="#conversions-between-various-date-and-time-formats" title="Permalink to this headline">¶</a></h2>
+<p>This module originally contained the time conversion and formatting routines from the
+FORTRAN program <a class="reference external" href="https://library.nrao.edu/public/memos/comp/CDIR_8.pdf">DOPSET</a> of Dick
+Manchester and Mark Gordon, subsequently augmented with some from program
+<a class="reference external" href="http://www.starlink.ac.uk/docs/starlinksummary.html">coco</a> from the Starlink
+software collection. Time formats used by DSN Science data files were also added, as
+well as convenience routines.  The time formats converted include</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>UNIX time</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> date numbers</p></li>
+<li><p>Python <code class="docutils literal notranslate"><span class="pre">datetime</span></code> objects</p></li>
+<li><p>Julian date and modified Julian date</p></li>
+<li><p>formats used by the DSN VLBI Science Recorder series data file</p></li>
+<li><p>miscellaneous other time strings</p></li>
+</ul>
+</div></blockquote>
+<p>The project <a class="reference external" href="https://github.com/SDRAST/DatesTimes/">website</a>
+contains the  Git repository from which the package can be cloned.</p>
+<p>Software <a class="reference external" href="https://sdrast.github.io/DatesTimes/">documentation</a>
+is generated with Sphinx.</p>
+</div>
 </div>
 
 
@@ -56,15 +76,16 @@
 
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="aboutastronomy.html">Astronomy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aboutdatestimes.html">DatesTimes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DatesTimes</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="aboutastronomy.html" title="previous chapter">Astronomy</a></li>
   </ul></li>
 </ul>
 </div>
@@ -97,6 +118,9 @@
       Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
+      |
+      <a href="_sources/aboutdatestimes.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
 
     
