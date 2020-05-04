@@ -38,6 +38,7 @@ for astrophysics, physics, and radio astronomy engineering.
    :caption: Contents:
 
    aboutastronomy
+   aboutastrophysics
    aboutdatestimes
    aboutradioastronomy
    
