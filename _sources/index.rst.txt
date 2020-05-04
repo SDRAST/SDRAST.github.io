@@ -39,6 +39,7 @@ for astrophysics, physics, and radio astronomy engineering.
 
    aboutastronomy
    aboutdatestimes
+   aboutradioastronomy
    
 Interdependencies
 =================
