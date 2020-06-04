@@ -43,6 +43,7 @@ for astrophysics, physics, and radio astronomy engineering.
    aboutmath
    aboutphysics
    aboutradioastronomy
+   aboutsupport
    
 Interdependencies
 =================
