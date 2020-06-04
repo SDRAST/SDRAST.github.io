@@ -17,7 +17,13 @@ Astronomy
    :maxdepth: 2
    
    astronomy
+   astrophysics
    datestimes
+   math
+   physics
+   radioastronomy
+   support
+   
 
-Updated by Tom Kuiper, 2019 October 30
+Updated by Tom Kuiper, 2020 June 4
 
