@@ -1,1 +1,1 @@
-.. include:: ../../Astronomy/README.rst
+.. include:: ../../support/README.rst
