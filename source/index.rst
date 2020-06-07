@@ -39,6 +39,7 @@ for astrophysics, physics, and radio astronomy engineering.
 
    aboutastronomy
    aboutastrophysics
+   aboutdatareduction
    aboutdatestimes
    aboutmath
    aboutphysics
@@ -56,5 +57,5 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Revised by Tom Kuiper, 2020 June 4
+Revised by Tom Kuiper, 2020 June 7
 
