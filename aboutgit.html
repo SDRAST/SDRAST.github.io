@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Git &#8212; Single Dish Radio Astronomy Software Tools 0.9 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="support" href="aboutsupport.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="git">
+<h1>Git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h1>
+<p>Linus Torvalds brilliantly re-invented version control in the form of
+<a class="reference external" href="https://en.wikipedia.org/wiki/Git">Git</a>. This is described well in a <a class="reference external" href="https://www.linuxjournal.com/content/git-revision-control-perfected">Linux
+Journal article</a>
+by Henry Van Styn, and is summarized here.</p>
+<p>At the core of the system is a <em>blob</em> which has the raw contents of a file.
+The name of the file is the hash value obtained from an algorithm known as
+<a class="reference external" href="https://en.wikipedia.org/wiki/SHA-1">SHA-1</a>.  This is a 40-bit hexadecimal
+number and is unique.  It is effectively impossible that any two files anywhere
+have the same hash value, <em>unless they are identical</em>.</p>
+<p>A Git <em>tree</em> is a file that has a directory listing using these hash values.
+A tree may contain blobs and other trees.  The tree itself is referred to
+(named with) its SHA-1 value. The tree does not <em>contain</em> the files, it only
+refers to them.</p>
+<p>A Git repository is a hidden directory called <code class="docutils literal notranslate"><span class="pre">.git</span></code> at the top level of
+your project’s directory.  If you share that project with someone, say by
+recursively copying your directory, that person now has a copy of your
+repository. One way of copying the project is with the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> command.
+The argument for this command is the URL of the remote repository.  The
+clone command also creates a reference to the URL called <code class="docutils literal notranslate"><span class="pre">origin</span></code>.</p>
+<p>This is what makes Git brilliant.  Say you have a directory and have a Git tree
+that refers to it, and then you make changes in one file.  The changed file
+becomes a new blob in your repository. Then you create another Git tree for the
+same but changed directory. The new tree have a different hash value name from
+the previous version of the directory. In your repository you now have one new
+blob and one new tree (which is a small file).</p>
+<p>Creating the new file and new tree is done with the command <cite>git commit</cite>.
+Git also creates a pointer from the new tree to its parent, which says in effect
+“I came from that tree”.  The commit action is recorded as the first seven or
+eight digits of the new tree’s SHA-1 value.  If for some reason you want to go
+back to an earlier version of your project, you get that by using the earlier
+commit name.</p>
+<p>After you have committed your changes, you can put the changes in the remote
+repository with the command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span></code>. If the remote repository
+called <code class="docutils literal notranslate"><span class="pre">origin</span></code> has changed in the mean time, then this will give an error.
+You can get those changes with the command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span></code>.  If Git
+cannot seemlessly merge in the changes, they will be flagged for you to resolve.
+After you’ve done that you can <code class="docutils literal notranslate"><span class="pre">push</span></code>.</p>
+<p>Another feature of Git is branching. That is making a copy of the
+repository for you to work on without disturbing <code class="docutils literal notranslate"><span class="pre">origin</span></code>. The <a class="reference external" href="https://www.linuxjournal.com/content/git-revision-control-perfected">article
+mentioned above</a> describes
+how to do this, and how to merge your changes back into the original branch.</p>
+<p>There are more things to know, like the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to see
+the current state of your project which will tell you what needs to be done next
+and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> command to tell Git to
+include new files into your current project tree.  If all this seems a bit much
+then sleep on it and read this again tomorrow.  It’s really quite simple.</p>
+<p>Tom Kuiper, 2020 Jun 9.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Single Dish Radio Astronomy Software Tools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aboutastronomy.html">Astronomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutastrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutdatareduction.html">Data Reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutdatestimes.html">DatesTimes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutmath.html">Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutphysics.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutradioastronomy.html">Radio_Astronomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutsupport.html">support</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="aboutsupport.html" title="previous chapter">support</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Tom Kuiper.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/aboutgit.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

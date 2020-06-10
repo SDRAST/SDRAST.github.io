@@ -45,6 +45,12 @@ for astrophysics, physics, and radio astronomy engineering.
    aboutphysics
    aboutradioastronomy
    aboutsupport
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Resources:
+   
+   aboutgit
    
 Interdependencies
 =================
