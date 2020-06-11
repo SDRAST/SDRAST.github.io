@@ -44,6 +44,8 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
 ]
+extensions.append('sphinx.ext.imgmath')
+imgmath_image_format = 'svg'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

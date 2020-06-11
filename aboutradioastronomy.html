@@ -14,7 +14,7 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Astronomy" href="aboutsupport.html" />
+    <link rel="next" title="support" href="aboutsupport.html" />
     <link rel="prev" title="Physics" href="aboutphysics.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -39,6 +39,18 @@
 <p>The <a class="reference external" href="https://sdrast.github.io/Radio_Astronomy/">documentation</a>
 was generated with Sphinx.</p>
 </div>
+<div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<p><strong>Antenna Temperature (K) of Venus Today for a 34-m Antenna at 8.4 GHz</strong></p>
+<blockquote>
+<div><p>In [1]: from math import pi
+In [2]: from datetime import datetime
+In [3]: from Radio_Astronomy import antenna_gain
+In [4]: from Radio_Astronomy.radio_flux import get_planet_flux
+In [5]: antenna_gain(0.7, pi*(34/2)**2) * get_planet_flux(‘Venus’, 8.4, datetime.now())
+Out[5]: 19.696163420934074</p>
+</div></blockquote>
+</div>
 
 
           </div>
@@ -61,11 +73,17 @@ was generated with Sphinx.</p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="aboutastronomy.html">Astronomy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutastrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutdatareduction.html">Data Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutdatestimes.html">DatesTimes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutmath.html">Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutphysics.html">Physics</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Radio_Astronomy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aboutsupport.html">Astronomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutsupport.html">support</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aboutgit.html">Git</a></li>
 </ul>
 
 <div class="relations">
@@ -73,7 +91,7 @@ was generated with Sphinx.</p>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="aboutphysics.html" title="previous chapter">Physics</a></li>
-      <li>Next: <a href="aboutsupport.html" title="next chapter">Astronomy</a></li>
+      <li>Next: <a href="aboutsupport.html" title="next chapter">support</a></li>
   </ul></li>
 </ul>
 </div>

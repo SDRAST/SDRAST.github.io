@@ -35,8 +35,37 @@
   <div class="section" id="astronomy">
 <h1>Astronomy<a class="headerlink" href="#astronomy" title="Permalink to this headline">¶</a></h1>
 <p>Classes and functions for astronomical calculations</p>
-<p>Link to <a class="reference external" href="https://github.com/SDRAST/Astronomy/">Project</a>.</p>
-<p>Link to <a class="reference external" href="https://sdrast.github.io/Astronomy/">source code documentation</a>.</p>
+<p>Astronomy calculations, such as source positions in various coordinate
+systems, input and output of astronomical data in standard formats, and also
+source data lookup from the SIMBAD database, are generally handled by
+<a class="reference external" href="https://www.astropy.org/">astropy</a>.</p>
+<p>The earliest version of this package was based on the FORTRAN program DOPSET
+by Manchester and Gordon <a class="reference internal" href="#mg1970" id="id1"><span>[MG1970]</span></a> for Doppler shift with respect to the LSR <a class="footnote-reference brackets" href="#id3" id="id2">1</a>.
+For solar system bodies, <a class="reference external" href="https://rhodesmill.org/pyephem/">PyEphem</a> support was later added. For convenience,
+a module <code class="docutils literal notranslate"><span class="pre">Astronomy.Ephem</span></code>
+provides extensions to <code class="docutils literal notranslate"><span class="pre">ephem</span></code>, with
+subclass <code class="docutils literal notranslate"><span class="pre">DSS</span></code> of <code class="docutils literal notranslate"><span class="pre">ephem.Observer</span></code> for DSN and ESA stations,
+and subclasses <code class="docutils literal notranslate"><span class="pre">Pulsar</span></code> and <code class="docutils literal notranslate"><span class="pre">Quasar</span></code> of <code class="docutils literal notranslate"><span class="pre">ephem.FixedBody</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Astronomy.Ephem</span></code> submodule also contains an extension to the PyEphem base
+data type that can be serialized, so as to be sent and received over network
+connections.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Astronomy</span></code> also has modules for redshift calculations,
+solar coordinates, <img class="math" src="_images/math/6af0888129ddbf89257d733e3341dc0e3d48a4c4.svg" alt="\Delta T=TAI-UTC"/>, and more.</p>
+<p><strong>Links</strong></p>
+<p><a class="reference external" href="https://github.com/SDRAST/Astronomy/">Project</a> (repository).</p>
+<p><a class="reference external" href="https://sdrast.github.io/Astronomy/">Source code documentation</a> (API).</p>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>For one-time Doppler calculation, the <a class="reference external" href="http://www.vla.nrao.edu/astro/guides/dopset/">Online Dopset Tool</a>.</p>
+</dd>
+</dl>
+<p class="rubric">Bibliography</p>
+<dl class="citation">
+<dt class="label" id="mg1970"><span class="brackets"><a class="fn-backref" href="#id1">MG1970</a></span></dt>
+<dd><p>Manchester, R. N. &amp; Gordon, M. <em>DOPSET: A Computer Program to Calculate Doppler-Corrected Reference Frequencies for Spectral Line and Pulsar Observations</em>, Technical Report, National Radio Astronomy Observatory, 1970.</p>
+</dd>
+</dl>
 </div>
 
 
@@ -65,6 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="aboutmath.html">Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutphysics.html">Physics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutradioastronomy.html">Radio_Astronomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aboutradioastronomy.html#examples">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutsupport.html">support</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Resources:</span></p>
