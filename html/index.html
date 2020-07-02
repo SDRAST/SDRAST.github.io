@@ -48,8 +48,8 @@ Deep Space Network.</p>
 monitor and control of data acquisition (observing), and data reduction.
 Consequently the two largest packages in this collection are <code class="docutils literal notranslate"><span class="pre">Data_Reduction</span></code>
 and <code class="docutils literal notranslate"><span class="pre">MonitorControl</span></code>.</p>
-<p>The monitor and control system is overlaid on the existing monitor and
-control (<em>e.g.</em> antenna controller, receiver control, <em>etc.</em> to provide features
+<p>The <strong>monitor and control</strong> system is overlaid on the existing monitor and
+control (<em>e.g.</em> antenna controller, receiver control, <em>etc.</em>) to provide features
 necessary or useful for conducting radio astronomy research. The collection
 may provide a quick way to start a small single dish radio astronomy
 <em>ab initio</em> because it is able to manage a telescope system in which all
@@ -59,7 +59,7 @@ are <code class="docutils literal notranslate"><span class="pre">Device</span></
 and <code class="docutils literal notranslate"><span class="pre">Port</span></code> by which signals enter and leave a device. Subclasses implement
 specific instances of these.  The actual hardware is controlled by <em>servers</em>
 while the user software is based on <em>clients</em>.</p>
-<p>The data reduction package is based on a number of base classes. <code class="docutils literal notranslate"><span class="pre">Observation</span></code>
+<p>The <strong>data reduction package</strong> is based on a number of base classes. <code class="docutils literal notranslate"><span class="pre">Observation</span></code>
 is the base class for a single set of data, often called a <em>scan</em>. <code class="docutils literal notranslate"><span class="pre">Map</span></code>
 is an example of a subclass of <code class="docutils literal notranslate"><span class="pre">Observation</span></code>.  A set of observations
 comprises a <code class="docutils literal notranslate"><span class="pre">Session</span></code> characterized by a project, a telescope, and a date.</p>
@@ -67,7 +67,7 @@ comprises a <code class="docutils literal notranslate"><span class="pre">Session
 the observing session and are observatory (and sometimes time) dependent.
 Each situation is captured by a module which has subclasses (of the base classes)
 which are aware of the context.</p>
-<p>The other modules provide support for the two main packages.
+<p>The <strong>other modules</strong> provide support for the two main packages.
 In astronomy there is the need to transform coordinates into various
 coordinate systems and to compensate frequencies for the various motions of
 the observer, the Earth, and the Sun; to compute frequencies such as

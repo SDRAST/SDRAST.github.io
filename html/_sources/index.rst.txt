@@ -25,8 +25,8 @@ monitor and control of data acquisition (observing), and data reduction.
 Consequently the two largest packages in this collection are ``Data_Reduction`` 
 and ``MonitorControl``.
 
-The monitor and control system is overlaid on the existing monitor and 
-control (*e.g.* antenna controller, receiver control, *etc.* to provide features
+The **monitor and control** system is overlaid on the existing monitor and 
+control (*e.g.* antenna controller, receiver control, *etc.*) to provide features
 necessary or useful for conducting radio astronomy research. The collection
 may provide a quick way to start a small single dish radio astronomy
 *ab initio* because it is able to manage a telescope system in which all
@@ -37,7 +37,7 @@ and ``Port`` by which signals enter and leave a device. Subclasses implement
 specific instances of these.  The actual hardware is controlled by *servers*
 while the user software is based on *clients*.
 
-The data reduction package is based on a number of base classes. ``Observation``
+The **data reduction package** is based on a number of base classes. ``Observation``
 is the base class for a single set of data, often called a *scan*. ``Map``
 is an example of a subclass of ``Observation``.  A set of observations
 comprises a ``Session`` characterized by a project, a telescope, and a date.
@@ -47,7 +47,7 @@ the observing session and are observatory (and sometimes time) dependent.
 Each situation is captured by a module which has subclasses (of the base classes)
 which are aware of the context.
 
-The other modules provide support for the two main packages. 
+The **other modules** provide support for the two main packages. 
 In astronomy there is the need to transform coordinates into various 
 coordinate systems and to compensate frequencies for the various motions of 
 the observer, the Earth, and the Sun; to compute frequencies such as 
