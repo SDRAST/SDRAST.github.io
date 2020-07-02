@@ -51,6 +51,7 @@ for astrophysics, physics, and radio astronomy engineering.
    :caption: Resources:
    
    aboutgit
+   aboutpages
    
 Interdependencies
 =================
