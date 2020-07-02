@@ -30,7 +30,12 @@ control (*e.g.* antenna controller, receiver control, *etc.* to provide features
 necessary or useful for conducting radio astronomy research. The collection
 may provide a quick way to start a small single dish radio astronomy
 *ab initio* because it is able to manage a telescope system in which all
-subsystems have their own, network-accessible controllers.
+subsystems have their own, network-accessible controllers.  The base classes
+are ``Device`` for modifying a signal, 
+``Signal`` which is modified by a device,
+and ``Port`` by which signals enter and leave a device. Subclasses implement
+specific instances of these.  The actual hardware is controlled by *servers*
+while the user software is based on *clients*.
 
 The data reduction package is based on a number of base classes. ``Observation``
 is the base class for a single set of data, often called a *scan*. ``Map``
@@ -83,5 +88,5 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Revised by Tom Kuiper, 2020 June 7
+Revised by Tom Kuiper, 2020 July 2
 

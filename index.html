@@ -53,7 +53,12 @@ control (<em>e.g.</em> antenna controller, receiver control, <em>etc.</em> to pr
 necessary or useful for conducting radio astronomy research. The collection
 may provide a quick way to start a small single dish radio astronomy
 <em>ab initio</em> because it is able to manage a telescope system in which all
-subsystems have their own, network-accessible controllers.</p>
+subsystems have their own, network-accessible controllers.  The base classes
+are <code class="docutils literal notranslate"><span class="pre">Device</span></code> for modifying a signal,
+<code class="docutils literal notranslate"><span class="pre">Signal</span></code> which is modified by a device,
+and <code class="docutils literal notranslate"><span class="pre">Port</span></code> by which signals enter and leave a device. Subclasses implement
+specific instances of these.  The actual hardware is controlled by <em>servers</em>
+while the user software is based on <em>clients</em>.</p>
 <p>The data reduction package is based on a number of base classes. <code class="docutils literal notranslate"><span class="pre">Observation</span></code>
 is the base class for a single set of data, often called a <em>scan</em>. <code class="docutils literal notranslate"><span class="pre">Map</span></code>
 is an example of a subclass of <code class="docutils literal notranslate"><span class="pre">Observation</span></code>.  A set of observations
@@ -103,7 +108,7 @@ for astrophysics, physics, and radio astronomy engineering.</p>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
-<p>Revised by Tom Kuiper, 2020 June 7</p>
+<p>Revised by Tom Kuiper, 2020 July 2</p>
 </div>
 
 
