@@ -19,6 +19,15 @@ The structure of the Sphinx source code web pages, starting from
         Resources:
         |- aboutgit
         |- aboutpages
+  Astronomy
+    docs
+      source
+        index.rst
+  Astrophysics
+    docs
+      source
+        index.rst
+  (and so on)
 
 In other words, the links in Contents point to the ``README.rst`` of each
 package. The ``README.rst`` should contain a short description of the package
