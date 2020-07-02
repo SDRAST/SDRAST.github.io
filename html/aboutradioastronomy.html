@@ -38,18 +38,20 @@
 <p>The code can be cloned from <a class="reference external" href="https://github.com/SDRAST/Radio_Astronomy">this site</a></p>
 <p>The <a class="reference external" href="https://sdrast.github.io/Radio_Astronomy/">documentation</a>
 was generated with Sphinx.</p>
-</div>
 <div class="section" id="examples">
-<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p><strong>Antenna Temperature (K) of Venus Today for a 34-m Antenna at 8.4 GHz</strong></p>
-<blockquote>
-<div><p>In [1]: from math import pi
-In [2]: from datetime import datetime
-In [3]: from Radio_Astronomy import antenna_gain
-In [4]: from Radio_Astronomy.radio_flux import get_planet_flux
-In [5]: antenna_gain(0.7, pi*(34/2)**2) * get_planet_flux(‘Venus’, 8.4, datetime.now())
-Out[5]: 19.696163420934074</p>
-</div></blockquote>
+<p>The radio flux of Venus depends on its distance and the frequency. The antenna
+temperature registered by the radio telescope depends on its size and efficiency:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="kn">from</span> <span class="nn">Radio_Astronomy</span> <span class="kn">import</span> <span class="n">antenna_gain</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="kn">from</span> <span class="nn">Radio_Astronomy.radio_flux</span> <span class="kn">import</span> <span class="n">get_planet_flux</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">antenna_gain</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="mi">34</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">get_planet_flux</span><span class="p">(</span><span class="s1">&#39;Venus&#39;</span><span class="p">,</span> <span class="mf">8.4</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="mf">19.696163420934074</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -78,7 +80,6 @@ Out[5]: 19.696163420934074</p>
 <li class="toctree-l1"><a class="reference internal" href="aboutmath.html">Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutphysics.html">Physics</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Radio_Astronomy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#examples">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutsupport.html">support</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Resources:</span></p>
