@@ -77,9 +77,18 @@ for astrophysics, physics, and radio astronomy engineering.
    aboutgit
    aboutpages
    
+   
 Interdependencies
 =================
 .. image:: import-map-3.png
+   
+To Do
+=====
+
+#. Convert ``MonitorControl``.
+#. Find a way for Sphinx to handle mixin classes.
+#. Register collection with `Best Practices Badge <https://bestpractices.coreinfrastructure.org/en>`_ program.
+#. Incorporate `Physical Quantities <https://github.com/hplgit/physical-quantities>`_ into the collection as the owner has passed away and his colleagues have not expressed an interest in it.
 
 Indices and tables
 ==================
