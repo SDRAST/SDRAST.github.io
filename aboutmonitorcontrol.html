@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index &#8212; Single Dish Radio Astronomy Software Tools 0.9 documentation</title>
+    <title>MonitorControl &#8212; Single Dish Radio Astronomy Software Tools 0.9 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -13,8 +13,10 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Physics" href="aboutphysics.html" />
+    <link rel="prev" title="Math" href="aboutmath.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -31,11 +33,33 @@
 
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="monitorcontrol">
+<h1>MonitorControl<a class="headerlink" href="#monitorcontrol" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="monitorcontrol-modules-classes-and-functions">
+<h2>MonitorControl modules, classes and functions<a class="headerlink" href="#monitorcontrol-modules-classes-and-functions" title="Permalink to this headline">¶</a></h2>
+<p>The concept of monitoring and controlling equipment is based on a <code class="docutils literal notranslate"><span class="pre">Device</span></code>
+class with inputs and outputs of the <code class="docutils literal notranslate"><span class="pre">Port</span></code> class, which accept and provide
+<code class="docutils literal notranslate"><span class="pre">Signal</span></code> class objects.</p>
+<p>The device classes for descriptions of telescopes in <code class="docutils literal notranslate"><span class="pre">Antenna</span></code>, <code class="docutils literal notranslate"><span class="pre">FrontEnd</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Receiver</span></code>, <code class="docutils literal notranslate"><span class="pre">Backend</span></code>, and <code class="docutils literal notranslate"><span class="pre">Switch</span></code>. These are superclasses defined
+in subdirectories of the same name, and are not
+associated with any specific hardware but define the general characteristics
+of the device.</p>
+<p>The actual hardware is defined in subdirectories of the prototype directory.
+Actual hardware control is performed by independent servers which provide
+remote control via the <code class="docutils literal notranslate"><span class="pre">Pyro</span></code> module.  The subclasses of the generic devices
+are clients of these servers.  The client software is aware of how the signals
+are modified at each stage; the servers are not.</p>
+<p>Observing at a very primitive level is possible by starting each of the servers
+and connecting to them with a Python command line.  This is useful for testing.</p>
+<p>There is an overall server which is the parent of the individual clients.
+The server can also be operated from the command line.  However, it is intended
+to serve monitor and control functions to a web browser client.</p>
+<p>The project <a class="reference external" href="https://github.com/SDRAST/MonitorControl/">website</a>
+contains the  Git repository from which the package can be cloned.</p>
+<p>Software <a class="reference external" href="https://sdrast.github.io/MonitorControl/">documentation</a>
+is generated with Sphinx.</p>
+</div>
 </div>
 
 
@@ -56,13 +80,13 @@
 
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="aboutastronomy.html">Astronomy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutastrophysics.html">Astrophysics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutdatareduction.html">Data Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutdatestimes.html">DatesTimes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutmath.html">Math</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aboutmonitorcontrol.html">MonitorControl</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MonitorControl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutphysics.html">Physics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutradioastronomy.html">Radio_Astronomy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutsupport.html">support</a></li>
@@ -77,6 +101,8 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="aboutmath.html" title="previous chapter">Math</a></li>
+      <li>Next: <a href="aboutphysics.html" title="next chapter">Physics</a></li>
   </ul></li>
 </ul>
 </div>
@@ -109,6 +135,9 @@
       Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
+      |
+      <a href="_sources/aboutmonitorcontrol.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
 
     
