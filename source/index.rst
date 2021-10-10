@@ -11,14 +11,9 @@ Single Dish
 Radio Astronomy Software Tools
 ==============================
 
-NOTICE: **These web pages are in the process of being built**, while simultaneously
-converting from Python 2 to Python 3.  The package collection is not yet complete.
-It will take a while.  Meanwhile, the
-pages are open to public access as a sign of things to come. 2020-07-02.
-
-Radio Astronomy Software Tools is a collection of software
-packages that have proven useful in doing radio astronomy with NASA's
-Deep Space Network.  
+Radio Astronomy Software Tools is a `collection of software
+packages` <https://github.com/SDRAST/> that have proven useful in doing radio 
+astronomy with NASA's Deep Space Network.  
 
 The two main activities in radio astronomy (besides building equipment) are
 monitor and control of data acquisition (observing), and data reduction.
