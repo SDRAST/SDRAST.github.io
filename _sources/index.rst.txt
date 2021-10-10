@@ -60,10 +60,12 @@ for astrophysics, physics, and radio astronomy engineering.
    aboutastrophysics
    aboutdatareduction
    aboutdatestimes
+   
    aboutDSP
    aboutElectronics
    aboutmath
    aboutmonitorcontrol
+   
    aboutphysics
    aboutradioastronomy
    aboutsupport
