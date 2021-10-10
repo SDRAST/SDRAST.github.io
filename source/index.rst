@@ -60,6 +60,7 @@ for astrophysics, physics, and radio astronomy engineering.
    aboutastrophysics
    aboutdatareduction
    aboutdatestimes
+   aboutDSP
    aboutmath
    aboutmonitorcontrol
    aboutphysics
